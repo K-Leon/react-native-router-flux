@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, StyleSheet } from 'react-native';
 import StaticContainer from 'react-static-container';
 
@@ -17,7 +18,6 @@ class TabbedView extends Component {
   static propTypes = {
     navigationState: PropTypes.object.isRequired,
     renderScene: PropTypes.func.isRequired,
-    style: View.propTypes.style,
   };
 
   constructor(props, context) {
